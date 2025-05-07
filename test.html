@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Penyewaan</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+  background-color: #fdfbee;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 400px;
+  margin: 50px auto;
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #009879;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"] {
+  padding: 8px;
+  background-color: #d9d9d9;
+  border: none;
+  border-radius: 5px;
+  margin-top: 5px;
+  width: 100%;
+}
+
+.date-container {
+  display: flex;
+  gap: 15px;
+  margin-top: 2px;
+  margin-left: 20px;
+}
+
+.date-container2{
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.date-container div {
+  flex: 1;
+}
+
+.button-group {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn-back {
+  background-color: #ff5722;
+}
+
+.btn-next {
+  background-color: #ff5722;
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Lengkapi Data Dibawah Ini</h2>
+    <form>
+      <label for="nama">Nama</label>
+      <input type="text" id="nama" name="nama">
+
+      <label for="alamat">Alamat</label>
+      <input type="text" id="alamat" name="alamat">
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email">
+
+      <label for="telepon">No. Telepon</label>
+      <input type="text" id="telepon" name="telepon">
+
+      <div class="date-container2">
+        <div>
+          <label for="tanggal-sewa">Tanggal Menyewa</label>
+          <input type="date" id="tanggal-sewa" name="tanggal-sewa">
+        </div>
+        <div class="date-container">
+        <div>
+          <label for="tanggal-kembali">Tanggal Kembali</label>
+          <input type="date" id="tanggal-kembali" name="tanggal-kembali">
+        </div>
+      </div>
+    </div>
+
+      <div class="button-group">
+        <button type="button" class="btn-back">Back</button>
+        <button type="submit" class="btn-next">Next</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
